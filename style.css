@@ -5108,3 +5108,25 @@ a {
 .fixed__btn-link--img {
   padding-top: 0;
 }
+
+
+.section--voice .section__title::after {
+  content: "";
+  background-image: url(./image/voice_title_icon.webp);
+  background-size: 100% 100%;
+  width: clamp(1px, 9.0625vw, 58px);
+  height: clamp(1px, 7.8125vw, 50px);
+  display: block;
+  position: absolute;
+  right: calc(50% - clamp(1px, 28.125vw, 180px));
+  top: clamp(1px, 2.5vw, 16px);
+}
+
+  @media screen and (min-width: 950px) {
+    .section--voice .section__title::after {
+      width: 70px;
+      height: 60px;
+      right: calc(50% - 220px);
+      top: 30px;
+    }
+  }
